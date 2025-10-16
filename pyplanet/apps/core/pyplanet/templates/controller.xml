@@ -1,5 +1,5 @@
-<quad pos="150 -50" z-index="100" size="15 15" image="https://download.dashmap.live/2a8765d2-5429-4d31-b68e-47ef8ac00af1/Weekly_Shorts_Cup_Logo_2.png"
-      autoscale="0" keepratio="Clip" halign="center" valign="center" opacity="0.4" url="http://pypla.net/" />
+<quad pos="150 -50" z-index="100" size="15 15" image="{{ image_url }}"
+      autoscale="0" keepratio="Clip" halign="center" valign="center" opacity="0.8" url="http://pypla.net/" />
 
 <!-- Disable chat -->
 <frame pos="{{ chat_pos }}" z-index="160" id="player_hide_chat_frame">

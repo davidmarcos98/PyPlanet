@@ -1,3 +1,4 @@
+import os
 from pyplanet.views import TemplateView
 
 
@@ -14,7 +15,7 @@ class ControllerView(TemplateView):
 		from pyplanet.core import Controller
 		context = await super().get_context_data()
 		context['game'] = Controller.instance.game.game
-
+		context['image_url'] = os.environ.get('PYPLANET_CONTROLLER_IMAGE_URL', 'https://avatars.githubusercontent.com/u/26363292?s=200&v=4')
 		context['chat_pos'] = '-160.25 -63.75'
 		if context['game'] != 'tm':
 			context['chat_pos'] = '-160.25 -39.75'
